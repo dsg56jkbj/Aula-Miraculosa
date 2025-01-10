@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançar Tarefa - Professor(a)</title>
+    <link rel="stylesheet" href="criartarefa.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lançar Tarefa</h1>
+        
+        <!-- Botões: Criar, Visualizar -->
+        <div class="button-group">
+            <button id="btn-criar" onclick="showCriar()">Criar</button>
+            <button id="btn-visualizar" onclick="showVisualizar()">Visualizar</button>
+        </div>
+        
+        <!-- Seção Criar -->
+        <div id="criar-section" style="display: none;">
+            <h2>Criar Tarefa</h2>
+            <form id="form-criar">
+                <!-- Título da Tarefa -->
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" required>
+                
+                <!-- Data Máxima de Entrega -->
+                <label for="dataMaxima">Data Máxima de Entrega:</label>
+                <input type="date" id="dataMaxima" name="dataMaxima" required>
+
+                <!-- Perguntas e Respostas -->
+                <div id="perguntas-section">
+                    <div class="pergunta">
+                        <label for="pergunta1">Pergunta 1:</label>
+                        <input type="text" id="pergunta1" name="pergunta1" placeholder="Digite a pergunta 1" required>
+                        <label for="resposta1">Resposta 1:</label>
+                        <textarea id="resposta1" name="resposta1" placeholder="Digite a resposta" required></textarea>
+                    </div>
+
+                    <div class="pergunta">
+                        <label for="pergunta2">Pergunta 2:</label>
+                        <input type="text" id="pergunta2" name="pergunta2" placeholder="Digite a pergunta 2" required>
+                        <label for="resposta2">Resposta 2:</label>
+                        <textarea id="resposta2" name="resposta2" placeholder="Digite a resposta" required></textarea>
+                    </div>
+
+                    <div class="pergunta">
+                        <label for="pergunta3">Pergunta 3:</label>
+                        <input type="text" id="pergunta3" name="pergunta3" placeholder="Digite a pergunta 3" required>
+                        <label for="resposta3">Resposta 3:</label>
+                        <textarea id="resposta3" name="resposta3" placeholder="Digite a resposta" required></textarea>
+                    </div>
+                </div>
+
+                <!-- Botão para salvar tarefa -->
+                <button type="submit">Salvar Tarefa</button>
+            </form>
+        </div>
+
+        <!-- Seção Visualizar -->
+        <div id="visualizar-section" style="display: none;">
+            <h2>Visualizar Tarefa</h2>
+            <!-- Aqui o professor poderá visualizar as tarefas criadas (poderia ser um link para um banco de dados, por exemplo) -->
+            <p>Aqui você verá suas tarefas criadas.</p>
+        </div>
+        
+    </div>
+
+    <script src="criartarefa.js"></script>
+</body>
+</html>

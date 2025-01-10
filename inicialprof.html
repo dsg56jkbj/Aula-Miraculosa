@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Professor(a)</title>
+    <link rel="stylesheet" href="inicialprof.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Imagem de fundo -->
+        <div class="image-container">
+            <img src="blob:https://pt.textstudio.com/3e8700b4-b026-43cc-baf4-517fae3648ad" alt="Imagem de boas-vindas" class="welcome-image">
+        </div>
+
+        <!-- Texto de boas-vindas -->
+        <div class="welcome-message">
+            <h1>Bem-vindo Professor(a/e)</h1>
+        </div>
+
+        <!-- Botões de ações -->
+        <div class="buttons-container">
+            <button onclick="window.location.href='https://docs.google.com/spreadsheets/d/1JdOYZtwUIFuszJOe2bfOVLtye-0xOyv5BV30Igf6Yu4/edit?gid=1294783027#gid=1294783027'">Lançar Nota</button>
+            <button onclick="window.location.href='criartarefa.html'">Lançar Tarefa</button>
+            <button onclick="window.location.href='provaprof.html'">Prova</button>
+            <button onclick="document.getElementById('recado-section').style.display = 'block';">Deixar Recado</button>
+        </div>
+
+        <!-- Seção para deixar recado -->
+        <div id="recado-section" class="recado-section">
+            <h3>Deixe seu Recado:</h3>
+            <textarea id="recado" placeholder="Escreva o recado para os alunos..." rows="5"></textarea>
+            <button onclick="saveRecado()">Salvar Recado</button>
+            <div id="recado-confirmation" class="confirmation-message"></div>
+        </div>
+    </div>
+
+    <script src="inicialprof.js"></script>
+</body>
+</html>

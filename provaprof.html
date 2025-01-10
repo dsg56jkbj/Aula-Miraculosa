@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provas - Professor(a)</title>
+    <link rel="stylesheet" href="provaprof.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo, Professor(a)</h1>
+
+        <!-- Lista de Provas -->
+        <div class="provas-list">
+            <h2>Provas Criadas</h2>
+            <!-- Aqui, a lista de provas criadas será exibida -->
+            <ul id="lista-provas">
+                <li><a href="#">Prova de Matemática - 01/2025</a></li>
+                <li><a href="#">Prova de História - 15/2025</a></li>
+            </ul>
+        </div>
+
+        <!-- Botões de Ação -->
+        <div class="button-group">
+            <button id="btn-criar" onclick="window.location.href='criarnovaprovaprof.html'">Criar Nova Prova</button>
+            <button id="btn-visualizar" onclick="window.location.href='visualizarprovasprof.html'">Visualizar Provas</button>
+            <button id="btn-editar" onclick="window.location.href='editarprovasprof.html'">Editar Provas</button>
+        </div>
+
+        <!-- Área de Recados -->
+        <div class="recados">
+            <h2>Recados para os Alunos</h2>
+            <textarea id="recado" rows="4" placeholder="Deixe um recado para seus alunos..."></textarea>
+            <button onclick="enviarRecado()">Enviar Recado</button>
+        </div>
+    </div>
+
+    <script src="provaprof.js"></script>
+</body>
+</html>

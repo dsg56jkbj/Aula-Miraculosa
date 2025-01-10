@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo, Aluno</title>
+    <link rel="stylesheet" href="inicialaluno.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo, Aluno(a)</h1>
+
+        <!-- Mensagem de boas-vindas -->
+        <p class="boas-vindas">Aqui você pode acessar suas tarefas, provas e mais!</p>
+
+        <!-- Botões de navegação -->
+        <div class="button-group">
+            <button onclick="window.location.href='tarefasaluno.html'">Minhas Tarefas</button>
+            <button onclick="window.location.href='provasaluno.html'">Minhas Provas</button>
+            <button onclick="window.location.href='recadosaluno.html'">Recados</button>
+            <button onclick="window.location.href='resultadosaluno.html'">Meus Resultados</button>
+        </div>
+
+        <!-- Notificação de Recados -->
+        <div class="recados-notificacao">
+            <h2>Recados Recentes:</h2>
+            <ul id="recados-lista">
+                <li>Prova de História marcada para o dia 15 de janeiro.</li>
+                <li>Nova tarefa de Matemática disponível. Prazo: 20 de janeiro.</li>
+                <li>Recado do Professor: Não se esqueça de revisar os conceitos vistos na última aula.</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 | O Mundo de Jho - Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="inicialaluno.js"></script>
+</body>
+</html>

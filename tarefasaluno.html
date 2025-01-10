@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas - Aluno</title>
+    <link rel="stylesheet" href="tarefasaluno.css">
+</head>
+<body>
+    <header>
+        <h1>Tarefas para o Aluno</h1>
+    </header>
+
+    <section class="tarefas">
+        <h2>Tarefas Disponíveis</h2>
+        <div class="task-container">
+            <!-- As tarefas serão carregadas aqui dinamicamente -->
+        </div>
+    </section>
+
+    <section class="tarefas-status">
+        <h2>Status da Tarefa</h2>
+        <div class="status-tarefa">
+            <p><strong>Título da Tarefa:</strong> <span id="tituloTarefa"></span></p>
+            <p><strong>Data de Entrega:</strong> <span id="dataEntrega"></span></p>
+            <div id="perguntasTarefa"></div>
+            <button id="enviarResposta">Enviar Resposta</button>
+        </div>
+    </section>
+
+    <script src="tarefasaluno.js"></script>
+</body>
+</html>

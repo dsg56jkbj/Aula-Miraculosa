@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provas - Aluno</title>
+    <link rel="stylesheet" href="provasaluno.css">
+</head>
+<body>
+    <header>
+        <h1>Provas Disponíveis</h1>
+    </header>
+
+    <section class="provas">
+        <h2>Provas Recentes</h2>
+        <div class="provas-container">
+            <!-- Aqui vamos mostrar o aviso de que as provas estarão disponíveis em breve -->
+            <div class="aviso">
+                <p><strong>As provas estarão disponíveis em breve!</strong></p>
+                <p>Fique atento às atualizações, e assim que as provas forem liberadas, você poderá acessar e responder através do Google Forms.</p>
+                <a href="#" class="link-prova" id="linkProva">Clique aqui para acessar a prova (link será fornecido quando disponível)</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="resposta-prova" style="display: none;">
+        <h2>Responder Prova</h2>
+        <div id="provaContainer" class="prova-container">
+            <!-- Aqui as perguntas e respostas seriam carregadas -->
+        </div>
+        <button id="enviarRespostas">Enviar Respostas</button>
+    </section>
+
+    <script src="provasaluno.js"></script>
+</body>
+</html>
